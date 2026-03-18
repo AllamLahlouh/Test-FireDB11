@@ -1,25 +1,23 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+/* =============================================
+   MedLab LIS v5 — Application Logic
+   Data stored in Firebase Realtime Database (multi-user, cloud sync)
+   ============================================= */
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyArQcSa5Dyio1NvumUtDNEjxDOePHsVGSY",
-  authDomain: "center-test-1.firebaseapp.com",
-  databaseURL: "https://center-test-1-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "center-test-1",
-  storageBucket: "center-test-1.firebasestorage.app",
+// ═══════════════════════════════════════
+// FIREBASE CONFIG  ← FILL IN YOUR VALUES
+// ═══════════════════════════════════════
+const FB_CONFIG = {
+  apiKey:            "AIzaSyArQcSa5Dyio1NvumUtDNEjxDOePHsVGSY",
+  authDomain:        "center-test-1.firebaseapp.com",
+  databaseURL:       "https://center-test-1-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId:         "center-test-1",
+  storageBucket:     "center-test-1.firebasestorage.app",
   messagingSenderId: "850555396478",
-  appId: "1:850555396478:web:d703cfd87212460fedd32f",
-  measurementId: "G-XN5W7W11W5"
+  appId:             "1:850555396478:web:d703cfd87212460fedd32f"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+firebase.initializeApp(FB_CONFIG);
+const DB = firebase.database();
 
 // ═══════════════════════════════════════
 // CONSTANTS & STATE
