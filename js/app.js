@@ -7,13 +7,14 @@
 // FIREBASE CONFIG  ← FILL IN YOUR VALUES
 // ═══════════════════════════════════════
 const FB_CONFIG = {
-  apiKey:            "YOUR_API_KEY",
-  authDomain:        "YOUR_PROJECT_ID.firebaseapp.com",
-  databaseURL:       "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
-  projectId:         "YOUR_PROJECT_ID",
-  storageBucket:     "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId:             "YOUR_APP_ID"
+  apiKey: "AIzaSyArQcSa5Dyio1NvumUtDNEjxDOePHsVGSY",
+  authDomain: "center-test-1.firebaseapp.com",
+  databaseURL: "https://center-test-1-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "center-test-1",
+  storageBucket: "center-test-1.firebasestorage.app",
+  messagingSenderId: "850555396478",
+  appId: "1:850555396478:web:d703cfd87212460fedd32f",
+  measurementId: "G-XN5W7W11W5"
 };
 
 firebase.initializeApp(FB_CONFIG);
