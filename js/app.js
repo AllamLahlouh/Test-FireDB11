@@ -1,12 +1,12 @@
-/* =============================================
-   MedLab LIS v5 — Application Logic
-   Data stored in Firebase Realtime Database (multi-user, cloud sync)
-   ============================================= */
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// ═══════════════════════════════════════
-// FIREBASE CONFIG  ← FILL IN YOUR VALUES
-// ═══════════════════════════════════════
-const FB_CONFIG = {
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
   apiKey: "AIzaSyArQcSa5Dyio1NvumUtDNEjxDOePHsVGSY",
   authDomain: "center-test-1.firebaseapp.com",
   databaseURL: "https://center-test-1-default-rtdb.asia-southeast1.firebasedatabase.app",
@@ -17,8 +17,9 @@ const FB_CONFIG = {
   measurementId: "G-XN5W7W11W5"
 };
 
-firebase.initializeApp(FB_CONFIG);
-const DB = firebase.database();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // ═══════════════════════════════════════
 // CONSTANTS & STATE
